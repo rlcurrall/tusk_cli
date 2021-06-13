@@ -17,9 +17,9 @@ subcommands:
                 help: Output format of the AST.
                 short: f
                 long: format
-                default_value: json
+                takes_value: true
             - out:
                 help: Output to a file
                 short: o
                 long: out
-                default_value: 'stdout'
+                takes_value: true
