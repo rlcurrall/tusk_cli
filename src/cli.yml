@@ -1,0 +1,25 @@
+name: tusk
+version: "1.0"
+about: A next generation PHP tool chain
+args:
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity
+subcommands:
+    - ast:
+        about: Output the abstract syntax tree for a PHP file.
+        args:
+            - file:
+                help: File to be parsed.
+                required: true
+            - format:
+                help: Output format of the AST.
+                short: f
+                long: format
+                default_value: json
+            - out:
+                help: Output to a file
+                short: o
+                long: out
+                default_value: 'stdout'
